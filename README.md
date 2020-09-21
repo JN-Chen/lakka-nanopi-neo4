@@ -17,3 +17,6 @@ Please refer to our website http://www.lakka.tv/get on how to setup Lakka.
 * #lakkatv on irc.freenode.org
 * [Discord](https://discord.gg/BNFR4hM)
 * [Forums](https://forums.libretro.com/c/libretro/lakka-tv-general)
+
+-------------------------------------------------------------------------------------------
+## 这是专门为友善之臂nanopi neo4适配的lakka工程
