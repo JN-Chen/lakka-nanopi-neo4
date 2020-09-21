@@ -1,0 +1,11 @@
+[Unit]
+Description=rkwifi bluetooth service
+After=retroarch.target
+
+[Service]
+Type=forking
+ExecStartPre=/usr/sbin/rfkill unblock 0
+ExecStart=/usr/bin/hciattach /dev/ttyS0 bcm43xx 115200
+
+[Install]
+WantedBy=retroarch.target

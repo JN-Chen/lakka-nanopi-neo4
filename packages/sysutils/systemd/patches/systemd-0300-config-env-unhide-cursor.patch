@@ -1,0 +1,28 @@
+--- systemd.orgi/units/debug-shell.service.in	2020-09-21 15:59:45.321846906 +0800
++++ systemd/units/debug-shell.service.in	2020-09-21 15:54:12.807655745 +0800
+@@ -8,20 +8,20 @@
+ #  (at your option) any later version.
+ 
+ [Unit]
+-Description=Early root shell on @DEBUGTTY@ FOR DEBUGGING ONLY
++Description=Early root shell on /dev/ttyS2 FOR DEBUGGING ONLY
+ Documentation=man:sushell(8)
+ Documentation=man:systemd-debug-generator(8)
+ DefaultDependencies=no
+ IgnoreOnIsolate=yes
+-ConditionPathExists=@DEBUGTTY@
++ConditionPathExists=/dev/ttyS2
+ 
+ [Service]
+-Environment=TERM=linux
+-ExecStart=@SUSHELL@
++Environment=ENV=/etc/profile
++ExecStart=/bin/sh -c 'echo -en "\033[?25h"; exec /bin/sh'
+ Restart=always
+ RestartSec=0
+ StandardInput=tty
+-TTYPath=@DEBUGTTY@
++TTYPath=/dev/ttyS2
+ TTYReset=yes
+ TTYVHangup=yes
+ KillMode=process
