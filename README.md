@@ -1,7 +1,6 @@
+# 这是专门为友善之臂nanopi neo4适配的lakka工程
 
-## 这是专门为友善之臂nanopi neo4适配的lakka工程
--------------------------------------------------------------------------------------------
-# Lakka - The DIY retro emulation console
+## Lakka - The DIY retro emulation console
 
 Lakka is a lightweight Linux distribution that transforms a small computer into a full blown emulation console.
 
@@ -10,11 +9,11 @@ Lakka is a lightweight Linux distribution that transforms a small computer into 
 * **Low cost** - We try our best to keep the hardware required to run Lakka as cheap as possible. The software is optimized to run fast even on low end computers. The power can be supplied by any micro USB adapter like the one for your smartphone.
 * **Open source** - Our code is free as in freedom and hosted on Github (though the project uses emulators that forbid commercialisation). We accept external contributions, and we do our best to integrate our own patches into upstream projects.
 
-## Installation instructions
+### Installation instructions
 
 Please refer to our website http://www.lakka.tv/get on how to setup Lakka.
 
-## Support
+### Support
 
 * [FAQ](https://github.com/libretro/Lakka-LibreELEC/wiki/FAQ)
 * #lakkatv on irc.freenode.org
