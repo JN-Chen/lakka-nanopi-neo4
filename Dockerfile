@@ -11,11 +11,11 @@
 #
 # Once inside the docker container, you can start building e.g,.
 #
-#    PROJECT=OdroidXU3 ARCH=arm make image
+#    PROJECT=Rockchip DEVICE=RK3399 ARCH=arm UBOOT_SYSTEM=nanopi4-neo4 make image
 #
 # Bulding a single package:
 #
-#    PROJECT=OdroidXU3 ARCH=arm scripts/build ppsspp
+#    PROJECT=Rockchip DEVICE=RK3399 ARCH=arm UBOOT_SYSTEM=nanopi4-neo4 scripts/build ppsspp
 #
 
 FROM ubuntu:focal
@@ -60,6 +60,7 @@ RUN apt-get update \
 		xsltproc \
 		xz-utils \
 		zip \
+		libssl* \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN ln -s /usr/bin/python2 /usr/bin/python

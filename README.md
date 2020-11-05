@@ -1,5 +1,15 @@
 # 这是专门为友善之臂nanopi neo4适配的lakka工程
 
+> support compile host ubuntu 20.04
+
+- sudo apt install docker.io
+- cd $(LAKKA_DIR)
+- sudo docker build -t lakka .
+- sudo docker run --rm -it -v $(pwd):/home/ubuntu lakka
+- PROJECT=Rockchip DEVICE=RK3399 ARCH=arm UBOOT_SYSTEM=nanopi4-neo4 make image
+
+--------------------------------------------------------------------------------
+
 ## Lakka - The DIY retro emulation console
 
 Lakka is a lightweight Linux distribution that transforms a small computer into a full blown emulation console.
