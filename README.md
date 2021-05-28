@@ -8,6 +8,8 @@
 - sudo docker run --rm -it -v $(pwd):/home/ubuntu lakka
 - PROJECT=Rockchip DEVICE=RK3399 ARCH=arm UBOOT_SYSTEM=nanopi4-neo4 make image
 
+如果编译失败，很可能是网络问题，删除Build目录和sources目录下对应的包，重新编译即可
+
 --------------------------------------------------------------------------------
 
 ## Lakka - The DIY retro emulation console
