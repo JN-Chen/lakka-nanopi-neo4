@@ -2,7 +2,6 @@
 
 > support compile host ubuntu 20.04
 
-- sudo apt install docker.io
 - cd $(LAKKA_DIR)
 - sudo docker build -t lakka .
 - sudo docker run --rm -it -v $(pwd):/home/ubuntu lakka
